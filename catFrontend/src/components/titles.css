@@ -1,0 +1,34 @@
+.section {
+    display: flex; /* Use flexbox to control alignment */
+    justify-content: flex-end; /* Align items to the right */
+    padding-right: 40px; /* Add at least 40px padding on the right */
+}
+
+.title-text {
+    font-size: 8rem; /* Default font size for desktop */
+    font-weight: 600; /* Make the text bold */
+    line-height: 1.1; /* Adjust the line height */
+    margin: 20px; /* Reset margin */
+    padding: 0; /* Remove default padding */
+    color: #000; /* Set the text color to black */
+    text-transform: uppercase; /* Make the text uppercase */
+    transform: translateY(-25%); /* Move the element 25% above its position */
+    white-space: pre-line; /* Preserve whitespace and line breaks */
+    word-break: break-all; /* Allow breaking words onto new lines */
+    max-width: 100%; /* Ensure the text block uses full width */
+    overflow-wrap: break-word; /* Allow breaking of long words */
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .title-text {
+        font-size: 3rem; /* Adjust font size for tablet */
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .title-text {
+        font-size: 2.5rem; /* Adjust font size for mobile */
+    }
+}
